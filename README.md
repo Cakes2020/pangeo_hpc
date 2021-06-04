@@ -98,7 +98,6 @@ Ideally, users will have a github account (it's free and easy to set up [here](h
 
 2. Register the R kernel with Jupyter:
 	```
-	conda activate r_env
 	Rscript -e 'IRkernel::installspec()'
 	```
 
