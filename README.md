@@ -91,7 +91,9 @@ Ideally, users will have a github account (it's free and easy to set up [here](h
 ## Optional - add an R kernel and packages:
 1. Create a new conda environment with some essential packages for working with R. You can also add any other packages you use that aren't included in `r-essentials` here. Deactivate your pangeo environment and then:
 	```
-	conda create -n r_env -c r r-essentials
+	conda create -n r_env -c r r-essentials r-vars
+	conda activate r_env
+	conda install -c conda-forge r-raster r-matlab r-ncdf4 r-lmtest r-cowplot
 	```
 
 2. Register the R kernel with Jupyter:
